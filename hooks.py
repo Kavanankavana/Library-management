@@ -1,10 +1,10 @@
 app_name = "library_management"
 app_title = "Library Management"
-app_publisher = "Frappe"
+app_publisher = "Kavana"
 app_description = "App for managing Articles, Members, Memberships and Transactions for Libraries"
 app_icon = "icon-book"
 app_color = "#589494"
-app_email = "info@frappe.io"
+app_email = "Kavanankavana6@gmai.com"
 app_url = "https://frappe.io/apps/library_management"
 app_version = "0.0.1"
 
