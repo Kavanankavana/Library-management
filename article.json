@@ -1,107 +1,97 @@
 {
- "autoname": "AR.#######", 
- "creation": "2014-05-06 14:13:01.203763", 
- "docstatus": 0, 
- "doctype": "DocType", 
- "document_type": "Master", 
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2026-04-22 16:45:09.215819",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "author",
+  "image",
+  "status",
+  "publisher",
+  "isbn",
+  "description",
+  "route",
+  "published"
+ ],
  "fields": [
   {
-   "fieldname": "section_break_1", 
-   "fieldtype": "Section Break", 
-   "permlevel": 0
-  }, 
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
   {
-   "fieldname": "article_name", 
-   "fieldtype": "Data", 
-   "in_list_view": 1, 
-   "label": "Article Name", 
-   "permlevel": 0, 
-   "reqd": 1
-  }, 
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
   {
-   "fieldname": "author", 
-   "fieldtype": "Data", 
-   "label": "Author", 
-   "permlevel": 0, 
-   "reqd": 1
-  }, 
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
   {
-   "fieldname": "status", 
-   "fieldtype": "Select", 
-   "in_list_view": 1, 
-   "label": "Status", 
-   "options": "Active\nInactive\nDiscontinued", 
-   "permlevel": 0, 
-   "reqd": 1
-  }, 
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nIssued"
+  },
   {
-   "fieldname": "publisher", 
-   "fieldtype": "Data", 
-   "label": "Publisher", 
-   "permlevel": 0
-  }, 
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Publisher"
+  },
   {
-   "fieldname": "language", 
-   "fieldtype": "Data", 
-   "label": "Language", 
-   "permlevel": 0
-  }, 
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN"
+  },
   {
-   "fieldname": "isbn", 
-   "fieldtype": "Data", 
-   "label": "ISBN", 
-   "permlevel": 0
-  }, 
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
   {
-   "fieldname": "column_break_8", 
-   "fieldtype": "Column Break", 
-   "permlevel": 0
-  }, 
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
   {
-   "fieldname": "image", 
-   "fieldtype": "Attach", 
-   "in_list_view": 0, 
-   "label": "Image", 
-   "permlevel": 0
-  }, 
-  {
-   "fieldname": "image_view", 
-   "fieldtype": "Image", 
-   "in_list_view": 1, 
-   "label": "Image View", 
-   "options": "image", 
-   "permlevel": 0
-  }, 
-  {
-   "fieldname": "section_break_11", 
-   "fieldtype": "Section Break", 
-   "permlevel": 0
-  }, 
-  {
-   "fieldname": "description", 
-   "fieldtype": "Text", 
-   "in_list_view": 1, 
-   "label": "Description", 
-   "permlevel": 0, 
-   "reqd": 1
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
   }
- ], 
- "modified": "2014-05-08 09:37:29.552616", 
- "modified_by": "Administrator", 
- "module": "Library Management", 
- "name": "Article", 
- "name_case": "", 
- "owner": "Administrator", 
+ ],
+ "has_web_view": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2026-04-22 17:31:32.681834",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Article",
+ "owner": "Administrator",
  "permissions": [
   {
-   "create": 1, 
-   "delete": 1, 
-   "permlevel": 0, 
-   "read": 1, 
-   "role": "Librarian", 
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
    "write": 1
   }
- ], 
- "search_fields": "article_name,author", 
- "title_field": "article_name"
+ ],
+ "route": "articles",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "website_search_field": "title"
 }
